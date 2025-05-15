@@ -21,7 +21,7 @@ export default function Footer() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+      <div className="relative flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Left Nav */}
         <nav className="space-x-8 font-semibold text-lg">
           <Link to="/profiles" className="hover:text-blue-300 transition">
@@ -41,7 +41,7 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="flex space-x-6 text-2xl">
           <a
-            href="https://github.com/your-github-username"
+            href="https://github.com/apurvp13"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -50,7 +50,7 @@ export default function Footer() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/your-linkedin-username"
+            href="https://linkedin.com/in/apurv1306"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"

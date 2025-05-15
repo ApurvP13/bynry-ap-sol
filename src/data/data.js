@@ -1,6 +1,8 @@
 const profiles = [
   {
     id: 1,
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small_2x/default-avatar-photo-placeholder-profile-picture-vector.jpg",
     name: "Aarav Mehta",
     job: "Frontend Developer",
     description: "Passionate about building accessible and scalable web apps.",
@@ -11,6 +13,8 @@ const profiles = [
   },
   {
     id: 2,
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small_2x/default-avatar-photo-placeholder-profile-picture-vector.jpg",
     name: "Diya Sharma",
     job: "UX Designer",
     description: "Loves crafting user experiences that feel effortless.",
@@ -21,6 +25,8 @@ const profiles = [
   },
   {
     id: 3,
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small_2x/default-avatar-photo-placeholder-profile-picture-vector.jpg",
     name: "Kabir Rao",
     job: "Full Stack Engineer",
     description: "Engineer with a knack for solving complex backend problems.",
@@ -31,6 +37,8 @@ const profiles = [
   },
   {
     id: 4,
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small_2x/default-avatar-photo-placeholder-profile-picture-vector.jpg",
     name: "Meera Nair",
     job: "Data Analyst",
     description: "Makes numbers speak with beautiful visualizations.",
@@ -41,6 +49,8 @@ const profiles = [
   },
   {
     id: 5,
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small_2x/default-avatar-photo-placeholder-profile-picture-vector.jpg",
     name: "Ishaan Kapoor",
     job: "Product Manager",
     description: "Loves turning ideas into scalable, lovable products.",
@@ -51,6 +61,8 @@ const profiles = [
   },
   {
     id: 6,
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small_2x/default-avatar-photo-placeholder-profile-picture-vector.jpg",
     name: "Ananya Roy",
     job: "DevOps Engineer",
     description: "Keeps systems running like a well-oiled machine.",
@@ -61,6 +73,8 @@ const profiles = [
   },
   {
     id: 7,
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small_2x/default-avatar-photo-placeholder-profile-picture-vector.jpg",
     name: "Raghav Jain",
     job: "AI/ML Researcher",
     description: "Exploring the frontier of machine intelligence.",
@@ -71,6 +85,8 @@ const profiles = [
   },
   {
     id: 8,
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small_2x/default-avatar-photo-placeholder-profile-picture-vector.jpg",
     name: "Sneha Bhat",
     job: "QA Engineer",
     description: "Catches bugs before users do.",
@@ -81,6 +97,8 @@ const profiles = [
   },
   {
     id: 9,
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small_2x/default-avatar-photo-placeholder-profile-picture-vector.jpg",
     name: "Yash Verma",
     job: "Cybersecurity Analyst",
     description: "Protects systems from digital threats.",
@@ -91,6 +109,8 @@ const profiles = [
   },
   {
     id: 10,
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small_2x/default-avatar-photo-placeholder-profile-picture-vector.jpg",
     name: "Priya Iyer",
     job: "Content Strategist",
     description: "Tells stories that convert and connect.",
