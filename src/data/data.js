@@ -9,7 +9,8 @@ const profiles = [
     email: "aarav.mehta@bynry.com",
     phone: "+91 9876543210",
     interests: ["React", "Design Systems", "Coffee"],
-    mapLink: "",
+    lat: 19.076,
+    lng: 72.8777,
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ const profiles = [
     email: "diya.sharma@bynry.com",
     phone: "+91 9876543211",
     interests: ["Sketching", "Figma", "Psychology"],
-    mapLink: "",
+    lat: 28.6139,
+    lng: 77.209,
   },
   {
     id: 3,
@@ -33,7 +35,8 @@ const profiles = [
     email: "kabir.rao@bynry.com",
     phone: "+91 9876543212",
     interests: ["Node.js", "MongoDB", "Chess"],
-    mapLink: "",
+    lat: 12.9716,
+    lng: 77.5946,
   },
   {
     id: 4,
@@ -45,7 +48,8 @@ const profiles = [
     email: "meera.nair@bynry.com",
     phone: "+91 9876543213",
     interests: ["Python", "DataViz", "Podcasts"],
-    mapLink: "",
+    lat: 13.0827,
+    lng: 80.2707,
   },
   {
     id: 5,
@@ -57,7 +61,8 @@ const profiles = [
     email: "ishaan.kapoor@bynry.com",
     phone: "+91 9876543214",
     interests: ["Strategy", "Startups", "Football"],
-    mapLink: "",
+    lat: 22.5726,
+    lng: 88.3639,
   },
   {
     id: 6,
@@ -69,7 +74,8 @@ const profiles = [
     email: "ananya.roy@bynry.com",
     phone: "+91 9876543215",
     interests: ["Linux", "Docker", "Mountaineering"],
-    mapLink: "",
+    lat: 23.0225,
+    lng: 72.5714,
   },
   {
     id: 7,
@@ -80,8 +86,9 @@ const profiles = [
     description: "Exploring the frontier of machine intelligence.",
     email: "raghav.jain@bynry.com",
     phone: "+91 9876543216",
-    interests: ["TensorFlow", "Reading", "Sci-Fi"],
-    mapLink: "",
+    interests: ["ML", "Reading", "Sci-Fi"],
+    lat: 18.5204,
+    lng: 73.8567,
   },
   {
     id: 8,
@@ -93,7 +100,8 @@ const profiles = [
     email: "sneha.bhat@bynry.com",
     phone: "+91 9876543217",
     interests: ["Testing", "Automation", "Cricket"],
-    mapLink: "",
+    lat: 26.9124,
+    lng: 75.7873,
   },
   {
     id: 9,
@@ -105,7 +113,8 @@ const profiles = [
     email: "yash.verma@bynry.com",
     phone: "+91 9876543218",
     interests: ["Hacking", "Linux", "Gaming"],
-    mapLink: "",
+    lat: 21.1458,
+    lng: 79.0882,
   },
   {
     id: 10,
@@ -117,7 +126,8 @@ const profiles = [
     email: "priya.iyer@bynry.com",
     phone: "+91 9876543219",
     interests: ["Writing", "Branding", "Poetry"],
-    mapLink: "",
+    lat: 11.0168,
+    lng: 76.9558,
   },
 ];
 
