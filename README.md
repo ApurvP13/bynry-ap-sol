@@ -1,12 +1,29 @@
-# React + Vite
+# 🚀 Bynry Showcase App by Apurv Pandey
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, animated React application to display user profiles with loading skeletons, modals, and full CRUD operations using MirageJS for in-browser API mocking.
 
-Currently, two official plugins are available:
+<!-- Add a real screenshot if available -->
+## ⚠️ This App uses Mirage.js to simulate a backend. NOT FOR DEPLOYMENT OR REAL BUILDS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Features
 
-## Expanding the ESLint configuration
+- ✅ View animated profile cards
+- ✨ Smooth Framer Motion transitions and modals
+- ⏳ Skeleton loaders for profile cards and admin list
+- ➕ Add and ❌ delete users via form/buttons
+- 🔌 Powered by MirageJS — no backend needed!
+- 🌙 Beautiful glassmorphism-inspired UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Tech Stack
+
+- React
+- Framer Motion
+- Tailwind CSS
+- React Router
+- MirageJS
+
+## Installation
+
+```bash
+npm install
+npm run dev
