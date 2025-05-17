@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import profiles from "../data/data";
+import React, { useState, useEffect } from "react";
 import ProfileCard from "../components/ProfileCard";
 import ProfileModal from "../components/ProfileModal";
+import CardSkeleton from "../components/CardSkeleton"; // 👈 Import skeleton
 import { motion } from "framer-motion";
 
 // Animation variants
@@ -22,6 +22,19 @@ const item = {
 
 const Profile = () => {
   const [selectedProfile, setSelectedProfile] = useState(null);
+  const [profiles, setProfiles] = useState([]);
+  const [loading, setLoading] = useState(true); // 👈 Track loading state
+
+  useEffect(() => {
+    setTimeout(() => {
+      fetch("/api/profiles")
+        .then((res) => res.json())
+        .then((data) => {
+          setProfiles(data.profiles);
+          setLoading(false); // 👈 Stop loading after fetch
+        });
+    }, 2000); // 👈 2s delay to showcase skeletons
+  }, []);
 
   return (
     <div className="relative flex flex-col gap-4 font-sans items-center">
@@ -40,14 +53,20 @@ const Profile = () => {
         initial="hidden"
         animate="show"
       >
-        {profiles.map((profile) => (
-          <motion.div key={profile.id} variants={item}>
-            <ProfileCard
-              onClick={() => setSelectedProfile(profile)}
-              profile={profile}
-            />
-          </motion.div>
-        ))}
+        {loading
+          ? [...Array(6)].map((_, index) => (
+              <motion.div key={index} variants={item}>
+                <CardSkeleton />
+              </motion.div>
+            ))
+          : profiles.map((profile) => (
+              <motion.div key={profile.id} variants={item}>
+                <ProfileCard
+                  onClick={() => setSelectedProfile(profile)}
+                  profile={profile}
+                />
+              </motion.div>
+            ))}
       </motion.div>
 
       {selectedProfile && (

@@ -3,6 +3,11 @@ import Admin from "./pages/Admin";
 import Hero from "./pages/Hero";
 import Profile from "./pages/Profile";
 import Layout from "./components/Layout";
+import makeServer from "./server";
+
+if (process.env.NODE_ENV === "development") {
+  makeServer();
+}
 
 export default function App() {
   return (

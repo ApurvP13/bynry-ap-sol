@@ -4,61 +4,73 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="relative mx-2 rounded-4xl bg-gradient-to-b from-black to-blue-700 text-white px-6 py-10 overflow-hidden">
-      {/* Watermark */}
-      <div
-        className="absolute inset-0 flex justify-center items-center pointer-events-none select-none"
-        style={{
-          opacity: 0.05,
-          fontSize: "10rem",
-          fontWeight: "900",
-          fontFamily: "sans-serif",
-          userSelect: "none",
-          zIndex: 0,
-        }}
-      >
-        Bynry
+    <footer className="bg-black  rounded-3xl font-sans text-slate-400 py-6  px-6">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        {/* Logo + Creator Info */}
+        <div>
+          <h2 className="text-2xl font-bold text-white tracking-wider">
+            BYNRY Profile Task
+          </h2>
+          <p className="mt-2 text-sm max-w-xs leading-relaxed">
+            Built by Apurv Pandey
+          </p>
+          <div className="mt-4 pt-6 text-left text-xs text-slate-500">
+            © {new Date().getFullYear()} Bynry. All rights reserved.
+          </div>
+        </div>
+
+        {/* Navigation Links */}
+        <div>
+          <h3 className="text-white text-sm font-semibold mb-4 uppercase tracking-wide">
+            Site Links
+          </h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link to="/profiles" className="hover:text-white transition">
+                Profiles
+              </Link>
+            </li>
+            <li>
+              <Link to="/admin" className="hover:text-white transition">
+                Admin Dashboard
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Social Links */}
+        <div>
+          <h3 className="text-white text-sm font-semibold mb-4 uppercase tracking-wide">
+            Connect
+          </h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a
+                href="https://github.com/apurvp13"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-white transition"
+              >
+                <FaGithub /> GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/apurv1306"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-white transition"
+              >
+                <FaLinkedin /> LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      {/* Content */}
-      <div className="relative flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-        {/* Left Nav */}
-        <nav className="space-x-8 font-semibold text-lg">
-          <Link to="/profiles" className="hover:text-blue-300 transition">
-            Profiles
-          </Link>
-          <Link to="/admin" className="hover:text-blue-300 transition">
-            Admin
-          </Link>
-        </nav>
-
-        {/* Center Text */}
-        <div className="text-center md:text-left space-y-1">
-          <p>Created by Apurv Pandey</p>
-          <p>© All rights reserved</p>
-        </div>
-
-        {/* Social Icons */}
-        <div className="flex space-x-6 text-2xl">
-          <a
-            href="https://github.com/apurvp13"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="hover:text-blue-400 transition"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://linkedin.com/in/apurv1306"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="hover:text-blue-400 transition"
-          >
-            <FaLinkedin />
-          </a>
-        </div>
+      {/* Watermark Text at Bottom */}
+      <div className="mt-12 uppercase font-extrabold font-sans text-3xl md:text-9xl pt-6 text-center bg-gradient-to-b from-black via-zinc-950 to-blue-700 bg-clip-text text-transparent ">
+        Bynry
       </div>
     </footer>
   );
